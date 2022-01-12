@@ -175,28 +175,6 @@
 <?php $this->load->view('layouts/footer_admin'); ?>
 
 <script>
-    // Initialize and add the map
-    function initMap() {
-        // The location of Uluru
-        const uluru = {
-            lat: -2.9684083085111665,
-            lng: 104.80025530542689
-        };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 15,
-            center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-        });
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANg7gcaTmXvVQN5y6WY9-yaQdeh4iBtXE&callback=initMap&libraries=&v=weekly&channel=2" async></script>
-
-<script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
